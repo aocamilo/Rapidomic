@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="productos">
+	<title> Servicios Disponibles | Rapidomic </title>
+	<head>
+		<meta charset="utf-8">
+		<title> Crear Servicios | Rapidomic</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel=stylesheet href="estilo2.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik|Lobster" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="controller.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<style type="text/css">
+      		html, body { height: 100%; margin: 0; padding: 0; }
+     		#map { height: 50%; width: 100%; }
+    	</style>
+	</head>
+	<body ng-controller="traerProductos">
+
+		<header class="header">
+  			<div class="page-header">
+    				<div class="">
+     					<a class="" href=""><h1 class="mensaje">Rapidomic<h1></a>
+  				</div>	
+  			</div>
+		</header>
+		<div id="map"></div>
+
+		<div class="container">
+			<h2>Servicios Disponibles</h2>
+		  <table class="table">
+		    <thead>
+		      <tr>
+		        <th></th>
+		        <th>Servicio</th>
+		        <th>Descripcion</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <tr ng-repeat="dato in solicitudes">
+		        <td><span><input type="radio" id="servicio" ng-click="get_loc(dato.direccion)" ng-model="borrar.id" value={{dato._id}}></span></td>
+		        <td><input type="radio" ng-model="newSolicitud.nombre" value={{dato.nombre}}>{{dato.nombre}}</td>
+		        <td><input type="radio" ng-model="newSolicitud.descripcion" value={{dato.descripcion}}>{{dato.descripcion}}</td
+		      </tr>
+		    </tbody>
+		  </table>
+		</div>
+
+		<!-- Boton crear servicio -->
+		<div class="form-group">
+			<label class="col-md-6 control-label"></label>
+			<div class="col-md-3">
+				<button type="submit" ng-click="selecionarSolicitud()" class="col-md-8 btn btn-danger">Seleccionar Servicio</button>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+    	</script>
+    	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsKoojrJzSRHARH3G3RCXVBqCJARMCIVQ">
+   		</script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script type="text/javascript" language="javascript">
+        	/*window.onLoad(get_loc());
+        	$(".servicio").onClick(alert("hiciste click"));*/
+    	</script>
+	</body>
+	<footer></footer>
+</html>

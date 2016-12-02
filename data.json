@@ -1,0 +1,68 @@
+{
+  "servicios": [
+    {
+      "id": 1,
+      "imagen": "rapidomic.jpg",
+      "nombre": "Domicilio",
+      "descripcion": "compramos algo por ti y te lo llevamos."
+    },
+    {
+      "id": 2,
+      "nombre": "Tramites",
+      "imagen": "rapidomic.jpg",
+      "descripcion": "hacemos tramites por ti"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Camilo",
+      "celular": "3057964944",
+      "email": "carango@rapidomic.com",
+      "password": "1234",
+      "tipo": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Daniel",
+      "celular": "3127566096",
+      "email": "dvillegas@rapidomic.com",
+      "password": "4321",
+      "tipo": 3
+    },
+    {
+      "nombre": "Julian",
+      "celular": "0000000000",
+      "email": "jzapata@rapidomic.com",
+      "password": "0000",
+      "tipo": 2,
+      "id": 3
+    },
+    {
+      "nombre": "andres",
+      "celular": "0000000",
+      "email": "andres@rapidomic.com",
+      "password": "0000",
+      "tipo": 2,
+      "id": 4
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": 1,
+      "nombre": "Tramites",
+      "descripcion": "Ir a Bancolombia y sacar un certificado de cuenta bancaria."
+    },
+    {
+      "id": 3,
+      "nombre": "Domicilio",
+      "descripcion": "Traerme el almuerzo"
+    },
+    {
+      "id": 2,
+      "nombre": "Domicilio",
+      "descripcion": "Traerme una hamburguesa de Presto."
+    }
+  ],
+  "selectedServices": []
+}

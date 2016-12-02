@@ -1,0 +1,200 @@
+
+body{
+  text-align: right;
+}
+
+.header{
+  display: inline;
+  height: 110px;
+}
+
+.checkbox label{
+  margin: 10px;
+
+}
+
+.menu{
+  margin-right: 35px;
+
+}
+
+a h1{
+  color: red;
+}
+
+li{
+  list-style: none;
+  text-align: center;
+  margin: 10px;
+  border-top: 1px solid #555459;
+  padding: 15px;
+}
+
+li:first-child{
+  border: none;
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  margin: 20px 0;
+}
+
+.mensaje{
+    display:inherit;
+    text-align: right;
+    font-family: 'Lobster', cursive;
+    height: 10px;
+  }
+
+img{
+  height: 80px;
+  position: absolute;
+  left: 150px;
+  top: 0;
+}
+
+.checkbox label{
+  margin: 0;
+  font-size: 15px;
+}
+
+.glyphicon{
+  display: none;
+}
+
+.page-header{
+  margin: 80px 0 20px;
+}
+
+.mensaje{
+  display:none;
+}
+
+.form-inline{
+  position: absolute;
+  right: 120px;
+  top: 25px;
+}
+
+.form-inline .form-group{
+  margin: 0px, 10px;
+}
+
+.form-inline .form-control{
+  margin: 0 5px;
+}
+
+.btn-danger{
+  padding: 5px 25px;
+}
+
+.form-control{
+  margin-left: 25px;
+  width: 90%;
+}
+
+h1{
+  margin-bottom: 30px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.form-horizontal .form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 600px){
+  
+  tr td span input{
+    display: block;
+  }
+
+  tr td input{
+    display: none;
+  }
+
+  label{
+    display: list-item;
+    text-align: center;
+  }
+
+  textarea{
+    position: relative;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  button{
+    position: absolute;
+    right: 40%;
+  }
+
+  tr td{
+    style: none;
+    text-align: left;
+  }
+
+  img{
+    position: inherit;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+  }
+
+  tr th{
+    style: none;
+  }
+
+  .page-header {
+    margin: 0;
+    height: 50px;
+  }
+
+  .page-header{
+    margin: 0;
+  }
+
+  .page-header .form-inline{
+    display: none;
+    margin: 0;
+  }
+
+  .form-group button{
+    position: absolute;
+    right: 25%;
+    width: 50%;
+
+  }
+
+  h2{
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .mensaje{
+    display:inherit;
+    text-align: right;
+    font-family: 'Lobster', cursive;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 100px;
+  }
+
+  .glyphicon{
+    display: inherit;
+    position: absolute;
+    left: 28px;
+    top: 25px;
+    font-size: 25px;
+  }
+}
+

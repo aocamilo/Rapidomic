@@ -1,0 +1,20 @@
+http://blog.mocionsoft.com/consumir-un-archivo-json-en-angular/
+
+1 = admin
+2 = user
+3 = domic
+
+<!-- $scope.addUsuario = function(){
+			$http.post("http://localhost:3000/usuarios",{
+				nombre: $scope.newUsuario.nombre,
+				celular: $scope.newUsuario.celular,
+				email: $scope.newUsuario.email,
+				password: $scope.newUsuario.password
+			})
+			.success(function(data,status,headers,config){
+				$scope.usuarios.push($scope.newPost);
+				$scope.newUsuario= {};
+			})
+			.error(function(error,status,headers,config){
+					console.log(error);
+			}); -->

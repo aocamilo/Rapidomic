@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="productos">
+	<title> Solicitudes | Rapidomic</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel=stylesheet href="estilo.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik|Lobster" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="controller.js"></script>
+	</head>
+	<body ng-controller="traerProductos">
+		<header class="header">
+  			<div class="page-header">
+    				<div class="">
+     					<a class="" href="menu.html"><h1 class="mensaje">Rapidomic<h1></a>
+  				</div>	
+  			</div>
+		</header>
+
+		<div class="dropdown">
+			<label for="servicios" ng-repeat="post in posts">
+				<input type="radio" ng-model="newSolicitud.nombre" name="servicios" value={{post.nombre}}>{{post.nombre}}
+			</label>
+		</div>
+		<div>
+			<label for"Direccion">Direccion:
+				<input type="text" ng-model="newSolicitud.direccion">
+			 </label>
+		</div>
+		<div>
+			<textarea ng-model="newSolicitud.descripcion" cols="40" rows="10" placeholder="Ingrese una breve descipcion"></textarea>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-6 control-label"></label>
+			<div class="col-md-3">
+				<button type="submit" ng-click="addSolicitud()" class="col-md-8 btn btn-danger">Solicitar servicio</button>
+			</div>
+		</div>
+
+	</body>
+</html>

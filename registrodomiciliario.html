@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="login">
+	<title> Rapidomic </title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel=stylesheet href="estilo.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik|Lobster" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script src="controller.js"></script>
+	</head>
+	<body ng-controller="traerUsuarios">
+		<header class="header">
+  			<div class="page-header">
+    				<div class="">
+     					<a class="" href=""><h1 class="mensaje">Rapidomic<h1></a>
+  				</div>	
+  			</div>
+		</header>
+		<section class="Registro">
+			<form class="form-horizontal">
+				<fieldset>
+						<div class="col-md-8 control-label"><h1>Registro de Domiciliarios</h1></div>
+					<!-- Nombre Input-->
+					<div class="form-group">
+  						<label class="col-md-6 control-label" for="nombreR"></label>  
+  						<div class="col-md-3">
+  							<input type="text" ng-model="newUsuario.nombre" class="form-control input-md" placeholder="Nombre" required> 
+  						</div>
+					</div>
+
+					<!-- Celular Input-->
+					<div class="form-group">
+  						<label class="col-md-6 control-label" for="celularR"></label>  
+  						<div class="col-md-3">
+  							<input type="text" ng-model="newUsuario.celular" class="form-control input-md" placeholder="Celular" required>
+  						</div>
+					</div>
+
+					<!-- Email Input-->
+					<div class="form-group">
+  						<label class="col-md-6 control-label" for="emailR"></label>  
+  						<div class="col-md-3">
+  							<input type="email" ng-model="newUsuario.email" class="form-control input-md" placeholder="Email" required>
+  						</div>
+					</div>
+
+					<!-- Password input-->
+					<div class="form-group">
+  						<label class="col-md-6 control-label" for="passwordR"></label>
+  						<div class="col-md-3">
+    							<input type="password" ng-model="newUsuario.password" class="form-control input-md" placeholder="Password" required>
+  						</div>
+					</div>
+
+					<!-- Boton registro -->
+					<div class="form-group">
+						<label class="col-md-6 control-label"></label>
+						<div class="col-md-3">
+							<button type="submit" ng-click="addUsuario2()" class="col-md-8 btn btn-danger">Registrarse</button>
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+		</section>
+		
+	</body>
+	<footer></footer>
+</html>
